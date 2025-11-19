@@ -165,6 +165,12 @@ hr{
 .pasek img{
     margin: 30px;
 }
+#menu{
+    display: none;
+}
+#close{
+    display: none;
+}
 @media screen and (max-width: 768px){
     section{
         display: flex;
@@ -198,5 +204,80 @@ hr{
         height: 60px;
         width: 200px;
     }
-    
+    .nav{
+        display: none;
+        flex-direction: column;
+    }
+    .nav a{
+        font-size: 25px;
+    }
+    .nav.open {
+        display: flex;
+    }
+    .header-tekst .open2{
+        display: none;
+    }
+    .umow-rozmowe-btn, .umow-rozmowe-btn2{
+        display: none;
+    }
+    #menu{
+        display: flex;
+        width: 50px;
+        margin-left: 150px;
+        filter: invert(1);
+    }
+    #close{
+        margin-top: -40px;
+        margin-left: 50px;
+        width: 35px;
+        filter: invert(1);
+    }
+}
+@media screen and (max-width: 425px){
+    h1{
+        font-size: 40px;
+    }
+    .nav{
+        margin: 0;
+    }
+    .nav a{
+        font-size: 25px;
+        margin: 15px;
+    }
+    .header-tekst .open2{
+        display: none;
+    }
+    .header-btn{
+        height: 50px;
+        width: 180px;
+    }
+    .najnowsze-wpisy-p{
+        width: 390px;
+    }
+    article{
+        align-items: center;
+    }
+    article img{
+        width: 300px;
+    }
+    article h3{
+        font-size: 23px;
+        text-align: center;
+    }
+    .line{
+        width: 300px;
+    }
+    hr{
+        width: 300px;
+    }
+    .pasek p{
+        margin: 8px;
+    }
+    .pasek img{
+        margin: 8px;
+        
+    }
+    section{
+        height: 1600px;
+    }
 }
