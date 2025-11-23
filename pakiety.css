@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 * {
     font-family: 'Syne';
@@ -9,7 +10,6 @@
 
 header {
     background-image: url(couple9.png);
-    background-position: center;
     background-size: cover;
     margin: 10px 5px;
     border-radius: 12px;
@@ -108,28 +108,215 @@ h1 {
     padding-top: 75px;
 }
 
-main{
+.pakiety{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-}
-
-.pakiety{
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     max-width: 1896px;
     border-radius: 12px;
+    padding: 120px;
+    color: #2D1E20;
     background-color: #E5E5E5;
 }
 
-h2{
+.pakiety h2{
+    text-align: center;
     margin: 0;
     font-size: 64px;
     font-weight: 400;
     letter-spacing: -2%;
     color: #2D1E20;
 }
+.articles{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+article{
+    background-color: #DFDFDE;
+    border-radius: 12px 40px 12px 40px;
+    height: 790px;
+    width: 492px;
+    padding: 40px;
+}
+.p1{
+    margin-top: 5px;
+    font-weight: 500; 
+    font-size: 18px;
+}
+.span1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 20px;
+}
+content{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+}
+.co-zawiera{
+    display: flex;
+    align-items: flex-start;
+    font-size: 20px;
+}
+.co-zawiera img{
+    height: 30.7px;
+    width: 30.7px;
+    margin: -3px 20px 20px 0;
+}
+.co-zawiera p{
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 1.2;
+}
+.p2{
+    margin: 0 0 20px 0;
+    font-family: 'Cormorant Garamond'; 
+    font-size: 20px;
+}
+.span2{
+    font-family: 'Cormorant Garamond';
+    font-weight: 600;
+    font-size: 42px;
+}
+.article-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+}
 
+.btn1, .btn2{
+    width: 409px;
+    height: 70.5px; 
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 20.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1{
+    margin-top: 40px;
+    background-color: white;
+    border: none;
+}
+.btn2{
+    background-color: transparent;
+    border: 1.5px solid black; 
+}
+
+.pakiety2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 1558px;
+    color: #997663;
+}
+
+.pakiet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+.info{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    gap: 50px;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 40px;
+}
+.pakiet-btn{
+    height: 66px;
+    width: 236px;
+    border: none;
+    border-radius: 100px;
+    background-color: #997663;
+    color: white;
+    font-size: 18px;
+}
+.konsultacje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-image: url(background.png);
+    height: 820px;
+    width: 100%;
+    max-width: 1896px;
+    border-radius: 12px;
+}
+.info2{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    border-radius: 12px;
+    background-color: white;
+    height: 480px;
+    width: 1563px;
+}
+.info2 p{
+    color: #997663;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 5%;
+}
+.info2 h2{
+    margin: 0;
+    color: #2D1E20;
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: -2%;
+}
+.info2 img{
+    height: 253px;
+    width: 253px;
+}
+.konsultacje-btn{
+    margin-top: 50px;
+}
+.konsultacje-btn1{
+    height: 67px;
+    width: 364px;
+    border: none;
+    border-radius: 100px;
+    background-color: #2D1E20;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+}
+.konsultacje-btn2{
+    margin-left: 15px;
+    height: 67px;
+    width: 284px;
+    border: 1px solid #2D1E20;
+    border-radius: 100px;
+    background-color: white;
+    color: #2D1E20;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+}
 #menu, #close {
     display: none;
 }
