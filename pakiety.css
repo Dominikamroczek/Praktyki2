@@ -10,7 +10,9 @@
 
 header {
     background-image: url(couple9.png);
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 10px 5px;
     border-radius: 12px;
     height: 565px;
@@ -87,7 +89,7 @@ h1 {
     text-align: center;
     color: white;
     font-weight: 400;
-    font-size: 72px;
+    font-size: 4.5rem;
     letter-spacing: -2px;
     margin-top: 20px;
 }
@@ -220,8 +222,13 @@ content{
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    width: 1558px;
+    max-width: 1558px;
     color: #997663;
+}
+.articles{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .pakiet{
@@ -242,9 +249,15 @@ h3{
     font-weight: 500;
     font-size: 40px;
 }
+.hr{
+    border: none; 
+    height: 1px; 
+    width: 100%; 
+    background-color: #997663;
+}
 .pakiet-btn{
     height: 66px;
-    width: 236px;
+    width: 236px;   
     border: none;
     border-radius: 100px;
     background-color: #997663;
@@ -259,6 +272,7 @@ h3{
     margin-right: auto;
     margin-top: 100px;
     background-image: url(background.png);
+    background-position: center;
     height: 820px;
     width: 100%;
     max-width: 1896px;
@@ -266,12 +280,12 @@ h3{
 }
 .info2{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 80px;
     border-radius: 12px;
     background-color: white;
     height: 480px;
-    width: 1563px;
+    max-width: 1563px;
 }
 .info2 p{
     color: #997663;
@@ -288,8 +302,14 @@ h3{
     letter-spacing: -2%;
 }
 .info2 img{
-    height: 253px;
-    width: 253px;
+    width: 120%;
+    height: auto;
+}
+.left{
+    margin-left: 80px;
+}
+.right{
+    padding-right: 100px;
 }
 .konsultacje-btn{
     margin-top: 50px;
@@ -321,6 +341,11 @@ h3{
     display: none;
 }
 
+@media screen and (max-width: 1024px){
+    .info2 h2{font-size: 50px;}
+    .info2 img{width: 160%;}
+}
+
 @media screen and (max-width: 768px) {
     .nav { display: none; margin-left: 0; flex-direction: column; }
     .nav.open { display: flex; }
@@ -330,9 +355,22 @@ h3{
     #close { margin-left: 50px; width: 35px; filter: invert(1); }
     .umow-rozmowe { display: flex; flex-direction: column; align-items: flex-end; }
     .umow-rozmowe-btn { display: none; }
-    .header-tekst { padding: 0; }
-    h1 { text-align: center; font-size: 55px; }
+    h1 { text-align: center; font-size: 3.5rem;}
     .header-btn { height: 60px; width: 200px; }
+    .pakiety2{width: 100%;}
+    .articles {display: flex; align-items: center; flex-direction: column;}
+    article{width: 100%; height: 100%;}
+    .info{gap: 30px;}
+    .info, .pakiet{flex-direction: column;}
+    h3{font-size: 30px;}
+    .info2{flex-direction: column-reverse; width: 100%; height: 60%;}
+    .info2 h2{font-size: 50px;}
+    .info2 img{margin: 0; width: 80%;}
+    .left{margin-left: 20px;}
+    .right{padding-right: 0;}
+    .konsultacje-btn{margin: 0;}
+    .konsultacje-btn2{margin: 15px 0;}
+    
 }
 
 @media screen and (max-width: 425px) {
@@ -349,4 +387,7 @@ h3{
     #close { width: 25px; height: 25px; margin-left: 0; }
     .header-tekst { margin-top: 40px; }
     .header-btn { height: 50px; width: 180px; }
+    .btn1, .btn2{width: 100%}
+    .info2 h2{font-size: 2rem;}
+    .info2 img{width: 50%; padding-top: 20px;}
 }
