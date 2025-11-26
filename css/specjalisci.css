@@ -16,7 +16,7 @@ body {
 
 
 header {
-    background-image: url(hero-specjalisci.png);
+    background-image: url(../assets/hero-specjalisci.png);
     background-size: cover;
     margin: 10px 5px;
     border-radius: 12px;
