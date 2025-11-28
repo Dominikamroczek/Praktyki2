@@ -132,8 +132,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 80px;
-    width: 90%;
-    max-width: 1600px;
+    width: 100%;
     height: auto;
     gap: 30px;
 }

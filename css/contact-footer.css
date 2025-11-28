@@ -45,7 +45,9 @@
   gap: 20px;
   margin-top: 70px;
 }
-
+.contact-person p{
+    margin-top: 0;
+}
 .contact-person img {
   margin-bottom: 30px;
   border-radius: 50%;
@@ -211,9 +213,14 @@
   max-width: 140px;
   height: auto;
 }
-
+.footer-link.bold{
+ font-family: 'Poppins', sans-serif;
+}
+.footer-link{
+ font-family: 'Poppins', sans-serif;
+}
 .footer-column {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   color: #000000;
 }
@@ -374,6 +381,7 @@
 
   .contact-person {
     margin-top: 40px;
+
   }
 
   .contact-card {
@@ -395,15 +403,17 @@
     font-size: 18px;
     max-width: 100%;
   }
-
+.contact-person p{
+    margin-top: 0;
+}
   .contact-person {
     flex-direction: row;
-    align-items: flex-start;
+        align-items: center;
+    
   }
 
   .contact-person img {
-    width: 64px;
-    height: 64px;
+    margin-top: 20px;
   }
 
   .contact-card {
@@ -486,4 +496,95 @@
   content: " *";
   color: #c84a4a;
   font-weight: 600;
+}
+/* MOBILE – stopka pod sobą, logo na środku */
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 40px 6% 20px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    text-align: center;
+    justify-items: center; /* centrowanie w gridzie */
+  }
+
+  .footer-logo-block {
+    text-align: center;
+  }
+
+  .footer-logo-block img {
+    margin: 0 auto;
+  }
+
+  .footer-column {
+    text-align: center;
+
+  }
+
+  .footer-menu .footer-link {
+    margin-bottom: 4px;
+  }
+
+  .footer-social-row {
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+/* Bardzo małe telefony */
+@media (max-width: 480px) {
+  .footer-top {
+    row-gap: 20px;
+  }
+
+  .footer-socials {
+    gap: 12px;
+  }
+}
+/* MOBILE – wyśrodkowanie sekcji kontaktowej */
+@media (max-width: 768px) {
+  .contact-inner {
+    text-align: center;
+  }
+
+  .contact-left {
+    text-align: center;
+  }
+
+  .contact-eyebrow {
+    text-align: center;
+  }
+
+  .contact-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-person {
+    justify-content: center;
+  }
+
+  .contact-person-desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-person {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-person-desc {
+    text-align: center;
+  }
 }
