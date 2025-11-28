@@ -336,6 +336,8 @@ h3 {
 
 .konsultacje-btn {
     margin-top: 50px;
+    gap: 10px;
+
 }
 
 .konsultacje-btn1 {
@@ -348,10 +350,11 @@ h3 {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 18px;
+    margin-right: 10px;
+
 }
 
 .konsultacje-btn2 {
-    margin-left: 15px;
     height: 67px;
     width: 284px;
     border: 1px solid #2D1E20;
@@ -429,6 +432,22 @@ h3 {
         height: 60px;
         font-size: 16px;
     }
+      .konsultacje-btn {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;   /* jeden pod drugim */
+    align-items: flex-start;  /* lub center jeśli wolisz na środku */
+    gap: 18px;                /* większa przerwa między przyciskami */
+  }
+
+  .konsultacje-btn1,
+  .konsultacje-btn2 {
+    width: 320px;             /* ta sama szerokość */
+    max-width: 100%;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 100px;
+  }
 }
 
 @media screen and (max-width: 768px) {

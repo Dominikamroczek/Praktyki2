@@ -1649,6 +1649,7 @@ body.nav-open .header-inner {
     width: 220px;
     font-size: 14px;
     padding: 12px;
+    border-radius: 50px;
   }
   .stats {
     flex-direction: column;
@@ -1829,11 +1830,13 @@ body.nav-open .header-inner {
     align-items: center;  
     gap: 20px;
   }
-
+.buttons{
+  max-height: 46px;
+}
   .trust-button .btn.outline {
     width: 100%;
     max-width: 260px; 
-    height: 52px;
+    height: 46px;
     border-radius: 26px;
     text-align: center;
   }
@@ -2563,7 +2566,59 @@ body.nav-open .header-inner {
     margin-right: auto;
   }
 }
+@media (max-width: 480px) {
+  .section-intro {
+    padding: 60px 0;
+  }
 
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    padding: 0 20px;
+  }
+
+  .intro-image {
+    width: 120px;
+    max-width: 50%;
+  }
+
+  .intro-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .intro-text h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .intro-text .desc {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .buttons .btn {
+    width: 100%;
+  }
+}
 /*
 ⣿⣿⣷⣮⡁⢎⠷⣏⡲⣄⣎⠵⣩⢿⣿⣿⣿⣿⢳⡒⢆⠰⢀⢂⠇⡒⢄⠢⡐⢢⠘⠴⣈⠦⢱⢈⠴⡐⡜⠒⡀⠂⠐⠠⢀⠀⣠⠆⡰⢔⡀⠀⢂⡉⠟⡹⠛⡹⠛⠿⢛⡍⣒⠠⢀
 ⢛⠿⣿⣿⣿⣶⡝⢣⠿⢚⣋⣧⣥⣯⣬⣍⣛⣛⠻⢽⣮⣗⢃⢎⡘⢄⢊⠔⣡⠂⣍⠲⡱⢘⡰⢈⠆⡱⢈⠥⡐⠠⠁⠄⣠⣾⠏⡔⠘⠠⣩⠄⢃⠐⠠⠐⠠⠁⠈⠀⡁⠠⠄⢣⠀
@@ -2599,3 +2654,5 @@ body.nav-open .header-inner {
 ⣿⣿⣿⣿⣿⣧⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣏⡜⢠⠑⡭⢲⣜⠲⡄⢆⠛⣯⣟⢧⠙⣿⣿⣿⣿⣿⣿⡇⠀⡀⠌⡐⡁⢂⡔⣠⢍⢞⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣻⣿⣿⣿⣿⣿⣿⢟⡟⠿⢟⡹⠿⣻⠟⡿⣿⡿⡟⢷⣌⣧⣿⣿⣿⡷⣹⠜⣤⢋⡴⣩⣇⢣⠈⢿⣿⣿⣿⣿⡇⠠⠐⡠⠂⡍⡖⢯⡵⣮⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 */
+
+
