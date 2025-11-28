@@ -297,6 +297,65 @@
   margin-bottom: 0;
 }
 
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 40px 4%;
+  }
+
+  .contact-left h2 {
+    font-size: 28px;
+  }
+
+  .contact-text {
+    font-size: 16px;
+  }
+
+  .contact-person {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 24px;
+  }
+
+  .contact-card {
+    padding: 32px 20px;
+  }
+
+  .contact-card {
+    border-radius: 12px;
+  }
+
+  .contact-form label {
+    font-size: 14px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 13px;
+  }
+
+  .contact-submit {
+    width: 100%;
+    text-align: center;
+  }
+    .footer-top {
+    row-gap: 20px;
+  }
+
+  .footer-socials {
+    gap: 12px;
+  }
+  
+  .contact-person {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-person-desc {
+    text-align: center;
+  }
+}
 @media (max-width: 640px) {
   .contact-section {
     padding: 60px 6%;
@@ -364,7 +423,6 @@
     height: auto;
   }
 }
-
 @media (max-width: 992px) {
   .contact-section {
     padding: 60px 6%;
@@ -389,7 +447,6 @@
     padding: 50px 40px;
   }
 }
-
 @media (max-width: 768px) {
   .contact-section {
     padding: 50px 5%;
@@ -433,73 +490,7 @@
   .form-submit {
     margin-top: 40px;
   }
-}
-
-@media (max-width: 480px) {
-  .contact-section {
-    padding: 40px 4%;
-  }
-
-  .contact-left h2 {
-    font-size: 28px;
-  }
-
-  .contact-text {
-    font-size: 16px;
-  }
-
-  .contact-person {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 24px;
-  }
-
-  .contact-card {
-    padding: 32px 20px;
-  }
-
-  .contact-card {
-    border-radius: 12px;
-  }
-
-  .contact-form label {
-    font-size: 14px;
-  }
-
-  .contact-form input,
-  .contact-form select,
-  .contact-form textarea {
-    font-size: 13px;
-  }
-
-  .contact-submit {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* walicadja formsy */
-.field-error {
-  margin-top: 4px;
-  font-size: 12px;
-  color: #c84a4a;
-  font-family: Poppins, sans-serif;
-}
-
-.form-field.error input,
-.form-field.error select,
-.form-field.error textarea {
-  border-bottom-color: #c84a4a;
-}
-
-.form-field.error label::after {
-  content: " *";
-  color: #c84a4a;
-  font-weight: 600;
-}
-/* MOBILE – stopka pod sobą, logo na środku */
-@media (max-width: 768px) {
-  .site-footer {
+    .site-footer {
     padding: 40px 6% 20px;
   }
 
@@ -507,7 +498,7 @@
     grid-template-columns: 1fr;
     row-gap: 24px;
     text-align: center;
-    justify-items: center; /* centrowanie w gridzie */
+    justify-items: center; 
   }
 
   .footer-logo-block {
@@ -538,21 +529,7 @@
     text-align: center;
     gap: 8px;
   }
-}
-
-/* Bardzo małe telefony */
-@media (max-width: 480px) {
-  .footer-top {
-    row-gap: 20px;
-  }
-
-  .footer-socials {
-    gap: 12px;
-  }
-}
-/* MOBILE – wyśrodkowanie sekcji kontaktowej */
-@media (max-width: 768px) {
-  .contact-inner {
+    .contact-inner {
     text-align: center;
   }
 
@@ -578,13 +555,24 @@
   }
 }
 
-@media (max-width: 480px) {
-  .contact-person {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .contact-person-desc {
-    text-align: center;
-  }
+
+/*walidacja forms*/
+.field-error {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #c84a4a;
+  font-family: Poppins, sans-serif;
+}
+
+.form-field.error input,
+.form-field.error select,
+.form-field.error textarea {
+  border-bottom-color: #c84a4a;
+}
+
+.form-field.error label::after {
+  content: " *";
+  color: #c84a4a;
+  font-weight: 600;
 }
