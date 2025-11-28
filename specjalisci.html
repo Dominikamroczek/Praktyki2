@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sara Sonik</title>
     <link rel="stylesheet" href="css/specjalisci.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+      <link rel="stylesheet" href="css/contact-footer.css">
 </head>
-
 <body>
-    <!-- HEADER -->
      <header>
         <nav>
             <a href="index.html"><img src="assets/Logo.png" alt="logo" class="logo"></a>
@@ -24,21 +24,31 @@
                 <a href="">Kontakt</a>
             </div>
             <div class="umow-rozmowe">
-                <img src="assets/menu.png" alt="menu" id="menu" onclick="Show()">
-                <img src="assets/close.png" alt="close" id="close" onclick="Hide()">
                 <button class="umow-rozmowe-btn">Umów rozmowę</button>
                 <button class="umow-rozmowe-btn2"><img src="assets/Arrow 1.png" alt="Arrow"></button>
             </div>
         </nav>
+<button class="hamburger" aria-label="Otwórz menu" aria-expanded="false">
+  <span class="hamburger__line"></span>
+  <span class="hamburger__line"></span>
+  <span class="hamburger__line"></span>
+</button>
+<nav class="mobile-nav">
+  <ul>
+    <li><a href="#jak-to-dziala">Jak to działa</a></li>
+    <li><a href="#pakiety">Pakiety</a></li>
+    <li><a href="#wydarzenia">Wydarzenia</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <button class="mobile-nav-cta">Umów rozmowę</button>
+</nav>
         <div class="header-tekst" id="header-tekst">
             <p style="color: white; font-weight: 600; font-size: 16px; letter-spacing: 2px; margin: 0; text-transform: uppercase;">specjaliści blissko</p>
             <h1>Zespół, który wspiera Cię <br> w drodze do relacji</h1>
             <button class="header-btn">Poznaj ekspertów</button>
         </div>
-
     </header>
-
-    <!-- SEKCJA 1 -->
     <section class="profile-section">
         <div class="profile-content">
             <div class="text-box">
@@ -69,10 +79,8 @@
         </div>
     </section>
 
-    <!-- SEKCJA 2 -->
     <section class="profile-section gray">
         <div class="profile-content reverse">
-
             <div class="text-box">
                 <h2>Sara Sonik</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -92,8 +100,6 @@
             </div>
         </div>
     </section>
-
-    <!-- SEKCJA 3 -->
     <section class="profile-section">
         <div class="profile-content">
             <div class="text-box">
@@ -104,10 +110,10 @@
                 <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
                 <div class="social-icons">
-                    <a href="#"><img src="social-fb.png" alt=""></a>
-                    <a href="#"><img src="social-ig.png" alt=""></a>
-                    <a href="#"><img src="social-yt.png" alt=""></a>
-                    <a href="#"><img src="social-tt.png" alt=""></a>
+                    <a href="#"><img src="assets/social-fb.png" alt=""></a>
+                    <a href="#"><img src="assets/social-ig.png" alt=""></a>
+                    <a href="#"><img src="assets/social-yt.png" alt=""></a>
+                    <a href="#"><img src="assets/social-tt.png" alt=""></a>
                 </div>
             </div>
             <div class="image-box">
@@ -115,13 +121,116 @@
             </div>
         </div>
     </section>
+    <section class="contact-section">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <p class="contact-eyebrow">SKONTAKTUJ SIĘ Z NAMI</p>
+      <h2>Zrób pierwszy krok – porozmawiajmy</h2>
+      <p class="contact-text">
+        W Blissko wszystko zaczyna się od rozmowy. Chcemy Cię poznać, zrozumieć Twoje potrzeby i
+        pomóc Ci odnaleźć kogoś, z kim naprawdę będzie Ci dobrze. Zostaw swoje dane, a oddzwonimy
+        w dogodnym dla Ciebie momencie.
+      </p>
+      <div class="contact-person">
+        <img src="assets/beata.png" alt="Beata Kot">
+        <div>
+          <p class="contact-person-name">BEATA KOT</p>
+          <p class="contact-person-phone">tel. 688 888 888</p>
+        </div>
+      </div>
+                <p class="contact-person-desc">
+            Rozmowę prowadzi założycielka Blissko – osoba, która od lat pomaga ludziom odnaleźć
+            bliskość i spokój w relacjach.
+          </p>
+    </div>
+    <div class="contact-right">
+      <div class="contact-card">
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label>Twoje imię</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-field">
+              <label>E‑mail lub numer kontaktowy</label>
+              <input type="text" name="contact" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label>Który pakiet Cię interesuje?</label>
+              <select name="package">
+                <option value="">Wybierz pakiet</option>
+                <option>Pakiet 1 – Poznajmy się</option>
+                <option>Pakiet 2 – W Twoim rytmie</option>
+                <option>Pakiet 3 – Nowa Ty / Nowy Ty</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>Preferowana godzina kontaktu</label>
+              <input type="text" name="time">
+            </div>
+          </div>
+          <div class="form-field full">
+            <label>Twoja wiadomość</label>
+            <textarea name="message" rows="4"></textarea>
+          </div>
+          <label class="checkbox-row">
+            <input type="checkbox" required>
+            <span>Wyrażam zgodę na przetwarzanie moich danych osobowych i innych danych zawartych w formularzach kontaktowych.</span>
+          </label>
+          <div class="form-submit">
+            <button type="submit" class="contact-submit">Wyślij wiadomość</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo-block">
+        <img src="assets/logo-black.png" alt="Blissko">
+      </div>
+      <div class="footer-column">
+        <p class="footer-label">Kontakt</p>
+        <p class="footer-link bold">+48 123 456 789</p>
+        <p class="footer-link">hello@blissko.pl</p>
+      </div>
+      <div class="footer-column">
+        <p class="footer-label">Dane</p>
+        <p class="footer-link">Blissko</p>
+        <p class="footer-link">ul. Mariacka 10</p>
+        <p class="footer-link">40‑014 Katowice</p>
+        <p class="footer-link">NIP: 1234567890</p>
+      </div>
+      <div class="footer-column footer-menu">
+        <p class="footer-label">Szybki dostęp</p>
+        <a href="index.html" class="footer-link">O nas</a>
+        <a href="pakiety.html" class="footer-link">Pakiety</a>
+        <a href="specjalisci.html" class="footer-link">Specjaliści i mentorzy</a>
+        <a href="#" class="footer-link">Społeczność Blissko</a>
+        <a href="#" class="footer-link">Blog</a>
+        <a href="#" class="footer-link">Kontakt</a>
+      </div>
+    </div>
+    <div class="footer-social-row">
+      <div class="footer-socials">
+        <a href="#"><img src="assets/social-fb.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/social-ig.png" alt="Instagram"></a>
+        <a href="#"><img src="assets/social-yt.png" alt="YouTube"></a>
+        <a href="#"><img src="assets/social-tt.png" alt="TikTok"></a>
+      </div>
+    </div>
 
-
-
-
-
-
-<script src="pakiety.js"></script>
+    <div class="footer-bottom">
+      <p>© 2025 Blissko. Wszystkie prawa zastrzeżone.</p>
+      <a href="#" class="footer-link">Polityka prywatności</a>
+    </div>
+  </div>
+</footer>
+<script src="javascript/formularz-kontakt.js"></script>
+<script src="javascript/podstrony-hamburger.js"></script>
 </body>
-
 </html>
