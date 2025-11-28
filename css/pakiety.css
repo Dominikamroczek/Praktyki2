@@ -398,3 +398,73 @@ h3{
     .info2 h2{font-size: 30px;}
     .konsultacje-btn1{width: 100%;}
 }
+/* MOBILE – sekcja konsultacje (pakiety.html) */
+@media screen and (max-width: 768px) {
+  .konsultacje {
+    padding: 40px 5%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .info2 {
+    flex-direction: column;          /* jedno pod drugim */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    padding: 32px 20px;
+    margin: 0 auto;
+  }
+
+  .info2 .left,
+  .info2 .right {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .info2 h2 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .konsultacje-btn {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .konsultacje-btn1,
+  .konsultacje-btn2 {
+    width: 100%;
+    max-width: 320px;
+    font-size: 14px;
+  }
+
+  .right img {
+    width: 70%;
+    max-width: 260px;
+    height: auto;
+    margin: 24px auto 0;
+    display: block;
+  }
+}
+
+/* Bardzo małe telefony */
+@media screen and (max-width: 425px) {
+  .info2 {
+    padding: 28px 16px;
+  }
+
+  .info2 h2 {
+    font-size: 22px;
+  }
+
+  .right img {
+    width: 80%;
+  }
+}
